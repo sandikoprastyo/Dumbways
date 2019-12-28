@@ -1,4 +1,4 @@
-# Dumdways
+# Dumbways
 
 #Satu soal berada di satu file menggunakan javascript dan manipulasi DOM <br/>
 
