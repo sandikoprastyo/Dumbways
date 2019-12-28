@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tes1</title>
+</head>
+<style>
+    .wrapper {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: 20%;
+    }
+    
+    [type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    select {
+        width: 32%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #animal {
+        width: 19%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    #email,
+    #pass,
+    #state {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <form action="#" method="post">
+            <h1>
+                Personal
+            </h1>
+            <hr>
+            <label for="Nama">Nama</label><br/>
+            <input type="text" id="Name" placeholder="Jhone Doe"><br/>
+
+            <label for="tempatLahir">Date of Birth</label><br/>
+            <select name="Month">
+            <option value="Month">Month</option>
+            <option value="january">january</option>
+            <option value="february">february</option>
+            </select>
+
+            <select name="Day">
+             <option value="Day">Day</option>
+            <option value="1">1</option>
+            </select>
+
+            <select name="Years">
+            <option value="Years">Years</option>
+            <option value="1990">1990</option>
+            </select>
+
+            <label>What is your siprit animal</label><br/>
+            <input type="text" id="animal" placeholder="Lion">
+            <input type="text" id="animal" placeholder="Tiger">
+            <input type="text" id="animal" placeholder="Bear">
+            <input type="text" id="animal" placeholder="Bull">
+            <input type="text" id="animal" placeholder="Serval">
+            <br/><br/>
+            <h1>
+                Account
+            </h1>
+            <hr>
+            <label for="Nama">Email</label><br/>
+            <input type="email" id="email" placeholder="Jhone@jhonedoe.com"><br/>
+            <label for="Nama">Password</label><br/>
+            <input type="password" id="pass"><br/>
+            <label for="Nama">Verify password</label><br/>
+            <input type="password" id="pass"><br/>
+            <br/><br/>
+            <h1>
+                Contact
+            </h1>
+            <hr>
+            <label for="Nama">Address</label><br/>
+            <input type="text" id="Address" placeholder="938 Jackson St."><br/>
+            <label for="Nama">City</label><br/>
+            <input type="text" id="city" placeholder="938 Jackson St."><br/>
+            <label for="Nama">State</label><br/>
+            <select name="State" id="state">
+            <option value="state">-State your state-</option>
+            <option value="Newyork">Newyork</option>
+            <option value="paris">Paris</option>
+            </select>
+
+            <label for="Phone">Phone</label>
+            <input type="text" id="phone" placeholder="837.383.3678"><br/>
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Tes 6</title>
+</head>
+<style>
+    .container {
+        border-radius: 15px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin: 10%;
+    }
+    
+    #programmers {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 20px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    
+    #skill,
+    #skill2,
+    #skill3 {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 20px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Membuat aplikasi data programmers dan skills</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" id="programmers" placeholder="text input programmer">
+                <button type="button" class="btn btn-primary" id="tombolAdd">Add</button>
+                <ul id="progResult">
+                    <li>Nama user ke 1</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <ul id="skillResult">
+                    <li>React</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="skill" placeholder="text input tambah skill">
+                <button type="button" class="btn btn-primary" id="addSkill">Add</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <ul id="skillResult2">
+                    <li>Nama user ke 2</li>
+                    <br>
+                    <li>WP</li>
+                    <li>Css</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="skill2" placeholder="text input tambah skill">
+                <button type="button" class="btn btn-primary" id="addSkill2">Add</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <ul id="skillResult3">
+                    <li>Nama user ke n</li>
+                    <br>
+                    <li>Nama skill</li>
+                    <li>Nama skill2</li>
+                    <li>Nama skill2 ke n</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="skill3" placeholder="text input tambah skill">
+                <button type="button" class="btn btn-primary" id="addSkill3">Add</button>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('tombolAdd').addEventListener('click', function() {
+            let a = document.getElementById('programmers').value;
+            let node = document.createElement("LI");
+            var textnode = document.createTextNode(a);
+            node.appendChild(textnode);
+            document.getElementById('progResult').appendChild(node);
+        })
+
+
+        document.getElementById('addSkill').addEventListener('click', function() {
+            let a = document.getElementById('skill').value;
+            let node = document.createElement("LI");
+            var textnode = document.createTextNode(a);
+            node.appendChild(textnode);
+            document.getElementById('skillResult').appendChild(node);
+        })
+
+        document.getElementById('addSkill2').addEventListener('click', function() {
+            let a = document.getElementById('skill2').value;
+            let node = document.createElement("LI");
+            var textnode = document.createTextNode(a);
+            node.appendChild(textnode);
+            document.getElementById('skillResult2').appendChild(node);
+        })
+
+        document.getElementById('addSkill3').addEventListener('click', function() {
+            let a = document.getElementById('skill3').value;
+            let node = document.createElement("LI");
+            var textnode = document.createTextNode(a);
+            node.appendChild(textnode);
+            document.getElementById('skillResult3').appendChild(node);
+        })
+    </script>
+</body>
+
+</html>s

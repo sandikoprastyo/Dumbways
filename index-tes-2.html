@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body style="text-align:center;" id="body">
+    <h1>Tes number two</h1>
+
+    <p style="font-size: 19px; 
+              font-weight: bold;">
+        Buatlah function yang mempunyai sebuah parameter, fungsi tersebut mempunyai tugas untuk mencetak nilai acak sepanjang 28 karakter sebanyak jumlah parameter. Clue: Function dijalankan: cetak(3);
+    </p>
+
+    <button onClick="GFG_Fun()"> 
+        click here 
+	</button>
+
+    <p id="GFG_DOWN" style="color: green;  
+              font-size: 24px;  
+              font-weight: bold;">
+    </p>
+</body>
+<script>
+    var print = document.getElementById('GFG_DOWN');
+
+
+    function randomStr(len, arr) {
+        var text = '';
+        for (var i = len; i > 0; i--) {
+            text +=
+                arr[Math.floor(Math.random() * arr.length)];
+        }
+        return text;
+    }
+
+    function GFG_Fun() {
+        let plus = " ";
+        for (i = 0; i <= 2; i++) {
+            plus += randomStr(28, '12345abcdeprint') + '<br/>'
+        }
+        print.innerHTML = plus
+    }
+</script>
+
+</html>
