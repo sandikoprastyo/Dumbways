@@ -1,7 +1,7 @@
 # Dumbways
 
-#Satu soal berada di satu file menggunakan javascript dan manipulasi DOM <br/>
+#Satu soal berada di satu file menggunakan CSS, javascript dan manipulasi DOM <br/>
 
 #terdapat internal CSS dan Javascript<br/>
 #ada beberapa soal yang belum selesai<br/>
-#Run Code cukup run file karena format HTML
+#Run Code copy file atau clone github https://github.com/sandikoprastyo/Dumbways.git
